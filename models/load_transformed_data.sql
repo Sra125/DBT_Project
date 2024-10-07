@@ -1,7 +1,7 @@
 -- models/load_transformed_data.sql
  
 -- Create the table in the target schema and load the transformed data
-CREATE OR REPLACE TABLE "Finance"."TRANSFORM_DATA"."COMPANY_TRANSFORMED" AS
+CREATE OR REPLACE TABLE "FINANCE"."TRANSFORM_DATA"."COMPANY_TRANSFORMED" AS
 WITH transformed_company_data AS (
     -- Select the data from the transform_company_data model
     SELECT 
