@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}  -- Set the materialization to 'table'
+{{ config(materialized='incremental') }}  -- Set the materialization to 'table'
  
 -- Log message to indicate the model execution has started
 {{ log("Executing: load_transformed_data model", info=True) }}
