@@ -1,6 +1,6 @@
 -- models/load_transformed_data.sql
  
-{{ config(materialized='table') }}  -- Set the materialization to 'table'
+{{ config(materialized='table', database= 'FINANCE', schema= 'TRANSFORM_DATA') }}  -- Set the materialization to 'table'
 
 WITH transformed_company_data AS (
     -- Select the data from the transform_company_data model
@@ -13,4 +13,4 @@ WITH transformed_company_data AS (
 ) 
 -- Select the transformed data to create the table
 SELECT * 
-FROM transformed_company_data;
+FROM transformed_company_data
