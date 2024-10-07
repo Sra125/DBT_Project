@@ -7,6 +7,5 @@ WITH company_data AS (
     FROM
         "FINANCE_ECONOMICS"."CYBERSYN"."COMPANY_INDEX"
 )
- 
 SELECT * 
 FROM company_data;
