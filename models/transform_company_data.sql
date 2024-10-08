@@ -1,5 +1,5 @@
 -- models/transform_company_data.sql
- {{ config(materialized='view') }} -- Set to 'view' since we are working with a view in Snowflake
+ {{ config(materialized='table') }} -- Set to 'view' since we are working with a view in Snowflake
 
 -- Log message to indicate the model execution has started
 {{ log("Executing: transform_company_data model", info=True) }}
