@@ -1,5 +1,6 @@
 -- models/select_company_data.sql
- 
+ {{ config(materialized='view') }} -- Set to 'view' since we are working with a view in Snowflake
+
 -- Log message to indicate the model execution has started
 {{ log("Executing: select_company_data model", info=True) }}
  
