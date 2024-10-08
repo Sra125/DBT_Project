@@ -18,4 +18,4 @@ WITH company_data AS (
 {{ log("Selecting all records from company_data", info=True) }}
  
 SELECT *
-FROM company_data;
+FROM company_data
