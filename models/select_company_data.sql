@@ -11,7 +11,7 @@ WITH company_data AS (
         COMPANY_ID,
         COMPANY_NAME
     FROM
-        "FINANCE_ECONOMICS"."CYBERSYN"."COMPANY_INDEX"
+        "FINANCE__ECONOMICS"."CYBERSYN"."COMPANY_INDEX"
 )
  
 -- Log message to indicate the data selection is complete
